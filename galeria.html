@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario y Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="13.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="https://actunivermilenium.000webhostapp.com/codigo10.php" method="POST">
+                <p>Nombre:</p>
+                <input type="text" name="nombre" size="30" required>
+
+
+                <p>Email:</p>
+                <input type="email" name="email" size="30" required>
+
+
+                <p>Año de nacimiento:</p>
+                <input type="number" name="nacido" min="1900" required>
+
+
+                <p>Sexo:</p>
+                <div class="gender-options">
+                    <label><input type="radio" name="hm" value="h" required> Hombre</label>
+                    <label><input type="radio" name="hm" value="m" required> Mujer</label>
+                </div>
+               
+
+
+                <p>Contraseña:</p>
+                <input type="password" name="contraseña" required>
+
+
+                <p><label for="msg">Mensaje:</label></p>
+                <textarea id="msg" name="user_message" required></textarea>
+
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </p>
+            </form>
+            <a href="13.html">Regresar</a>
+        </div>
+
+
+        <div class="form-container sign-in">
+            <form id="signinForm">
+                <h1>Inicia sesión</h1>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://discord.com" class="icon" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://wa.me" class="icon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <span>Usa tu correo y contraseña</span>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <a href="#">Olvidaste tu contraseña?</a>
+                <a href="13.html" class="brutalist-button">
+                    <div class="vr-logo">
+                        <div class="vr-logo"></div>
+                        <div class="vr-logo-square"></div>
+                        <div class="vr-logo-square"></div>
+                        <div class="vr-logo-square"></div>
+                    </div>
+                    <center>
+                        <div class="button-text">
+                          <br>  <span>Sesión</span>
+                          <br>  <span>Iniciar</span>
+                        </div>
+                    </center>
+                </a>
+
+
+            </form>
+        </div>
+
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenido a crear tu cuenta!</h1>
+                    <p>Ingresa tus detalles personales</p>
+                    <button class="hidden" id="login">Regresar al Inicio</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hola, sera un placer tenerte con nosotros</h1>
+                    <p>Regístrate aqui abajo</p>
+                    <button class="hidden" id="register">Regístrate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario y Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="13.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="https://actunivermilenium.000webhostapp.com/codigo10.php" method="POST">
+                <p>Nombre:</p>
+                <input type="text" name="nombre" size="30" required>
+
+
+                <p>Email:</p>
+                <input type="email" name="email" size="30" required>
+
+
+                <p>Año de nacimiento:</p>
+                <input type="number" name="nacido" min="1900" required>
+
+
+                <p>Sexo:</p>
+                <div class="gender-options">
+                    <label><input type="radio" name="hm" value="h" required> Hombre</label>
+                    <label><input type="radio" name="hm" value="m" required> Mujer</label>
+                </div>
+               
+
+
+                <p>Contraseña:</p>
+                <input type="password" name="contraseña" required>
+
+
+                <p><label for="msg">Mensaje:</label></p>
+                <textarea id="msg" name="user_message" required></textarea>
+
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </p>
+            </form>
+            <a href="13.html">Regresar</a>
+        </div>
+
+
+        <div class="form-container sign-in">
+            <form id="signinForm">
+                <h1>Inicia sesión</h1>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://discord.com" class="icon" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://wa.me" class="icon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <span>Usa tu correo y contraseña</span>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <a href="#">Olvidaste tu contraseña?</a>
+                <a href="13.html" class="brutalist-button">
+                    <div class="vr-logo">
+                        <div class="vr-logo"></div>
+                        <div class="vr-logo-square"></div>
+                        <div class="vr-logo-square"></div>
+                        <div class="vr-logo-square"></div>
+                    </div>
+                    <center>
+                        <div class="button-text">
+                          <br>  <span>Sesión</span>
+                          <br>  <span>Iniciar</span>
+                        </div>
+                    </center>
+                </a>
+
+
+            </form>
+        </div>
+
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenido a crear tu cuenta!</h1>
+                    <p>Ingresa tus detalles personales</p>
+                    <button class="hidden" id="login">Regresar al Inicio</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hola, sera un placer tenerte con nosotros</h1>
+                    <p>Regístrate aqui abajo</p>
+                    <button class="hidden" id="register">Regístrate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+CSS
+
+
+
+ 
+JAVA
+
+
+
+

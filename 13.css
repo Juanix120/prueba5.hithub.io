@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+    background: linear-gradient(to right, #004e92, #000428); /* Gradiente azul oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px; /* Bordes suavizados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 700px;
+    max-width: 90%;
+    padding: 40px; /* Más espacio interior */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container p {
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+
+.container span {
+    font-size: 14px;
+    color: #666666;
+}
+
+
+.container a {
+    color: #0056b3;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+
+.container a:hover {
+    border-bottom: 1px solid #0056b3;
+}
+
+
+.container button {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados sutiles */
+    background: #0062cc; /* Azul fuerte */
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.container button:hover {
+    background: #0056b3;
+    transform: translateY(-3px); /* Eleva el botón */
+}
+
+
+.container button:active {
+    background: #004085;
+    transform: translateY(0); /* Restaura la posición del botón */
+}
+
+
+.brutalist-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    box-shadow: 5px 5px 0 #004e92;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+
+.brutalist-button:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0 #004e92;
+    background-color: #0062cc;
+    color: #ffffff;
+}
+
+
+.brutalist-button:active {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+.social-icons {
+    margin: 20px 0;
+}
+
+
+.social-icons a {
+    border: 2px solid #004e92;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    width: 50px;
+    height: 50px;
+    background-color: #0056b3;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.social-icons a:hover {
+    background-color: #004085;
+    transform: translateY(-3px);
+}
+
+
+.container form {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.container input,
+.container textarea {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: calc(100% - 30px);
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+.container textarea {
+    height: 120px;
+}
+
+
+.gender-options {
+    margin-top: 15px;
+}
+
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333333;
+}
+
+
+.gender-options input {
+    margin-right: 10px;
+}
+
+
+/* Animaciones y transiciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.container, .container form, .brutalist-button, .social-icons a {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
